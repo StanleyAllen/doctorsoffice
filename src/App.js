@@ -1,18 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+import { withAuthenticator } from "@aws-amplify/ui-react";
+import Footer from './component/Footer';
+import Header from './component/Header';
+import ShareNotes from './component/SharedNotes';
+import AppNotes from './component/AppNotes';
 
-function App() {
-  return (
-    <div className="App">
-      <header>
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>We now have Auth!</h1>
-      </header>
-      <AmplifySignOut />
-    </div>
-  );
+
+
+class App extends React.Component {
+
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <AppNotes />
+        <ShareNotes />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default withAuthenticator(App);
