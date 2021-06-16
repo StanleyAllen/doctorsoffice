@@ -55,7 +55,7 @@ function AppNotes() {
 
   
   return (
-    <div className="App">
+    <div className="AppNotes">
       <h1>My Docmentation Notes</h1>
       <input
         onChange={e => setFormData({ ...formData, 'name': e.target.value})}
