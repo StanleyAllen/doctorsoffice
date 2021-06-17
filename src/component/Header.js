@@ -7,9 +7,7 @@ const Header = () => {
         <div className="container nav-elements">
 
           <ul className="navbar">
-            <li><a href="#home">home</a></li>
-            <li><a href="#snipets">snipets</a></li>
-            <li><a href="#people">people</a></li>
+
           </ul>
         </div>
       </nav>

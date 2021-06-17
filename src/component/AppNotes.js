@@ -90,4 +90,4 @@ function AppNotes() {
   );
 }
 
-export default AppNotes();
+export default AppNotes;
